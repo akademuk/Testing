@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/bootstrap-reboot.min.css" />
+   
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/fullpage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="scripts/full.js"></script>
+<script src="scripts/jquery.fullPage.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+  <div id="fullpage">
+    <header class="header active section" >
+      <div class="wrapper">
+        <div class="logo_navigation">
+          <div class="logo">
+            <a href="#" class="logo_brand">
+              <svg 
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="150px" height="34px">
+  <image  x="0px" y="0px" width="150px" height="34px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAAAiCAMAAACKhNCzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAZlBMVEX///8avJwavJwavJwavJwavJwavJwavJz///////////////////////8avJwavJz///////8avJwavJwavJwavJwavJz///////////////////////8avJwavJwavJwavJz////QCUSAAAAAIHRSTlMAAIi7d90iRBFmd0TuMxEzIqpmzO6qmbuZzN2IVVWJm405RNMAAAABYktHRACIBR1IAAAAB3RJTUUH5QUdECcBUSoBIAAABD5JREFUWMPtl2uXmzgMhk2AALZDIDcTIFv8//9kLclXYNpJOz3dPWf1AcbYYz/WK8kOY96yXTssy5JnhXmWR/Y3bB9rAatyfP6P9R/Foth6G6tu+B/FInsXS0it/31YJ62/BKutquqcgJyr6riHBSMjvk6IUwIkhHn2HuuUdm++bPuDXa4Y2LeizbLL/bocsjNyPFoCKluHdXzgyOV+hv9rlEbrhWUcJDSfXOuRC2hj99BB56TUxBgfzQc51PH4oeuUsdmCmj8H2H++OLu2NvNu1L61aSaeb25kaSZ9am8DUkrflrBu41vgEdgCG+yXZx2Plw3A9oQ1mT8NP7suwe5ZvsSWp1hl2ABjRKUUTKlN3s3wHod+tFhNoJYdYU3xPqJ+zeFBLoRpzTYK8kt+jQBgXXq9YqyKenLTulBYK5gK5pSMjUTH6h6X7cAXU8e6njxBgsuJk3Id9suBT/DGrTUoLLTMuyT1LN+dKE1UkWD3GKuwfmLti2A0Rg0CCWHno5kl6jVhW+FA5cU7AQgfnLpCWy5UsSFXnheXZNkNw560M3YJWsZYZetzUNhQhxU5zKeojXkovSwzekKFbYCWvXT+wQ14FcG3JvgvNoANFq79DzwKwGr3sZby0q4yGbHmFEuEpkB1VYjq2YVUNMdoKSkgSLpbDoaqffNY2QbraJu3B4LVzQCJzWeIUt55b4DfnkInNhB74NQBG40T9WzTulhSi7Cua6ww+HZO6oF3x3M2sCjPnGJRt/gYqyYVJ9JwjXUtfoTFCle4SrZZt5axczADuDfxMyyMsAa0BA0JqyyctRHWssUysWgryGtEqXAVKg2zL6+S09LJsjtYMu6Hj33nSvMrhDxawDruYjFGR0ChrbttBeQcqjU3sdbzmoXY/QgLE1P4sOJ2FjfpMRSIFRYlwxaL3VdYuHkuXZmy1qcFYIM1uDLm6rCr+jQGV7xWgPW6XwjmAVcIJHpEWBd2KMzPjBYLcCGT6oj7TLBgbSnc0dhtsDBzn42YXUGzsWmLSGVjmE4fW5sWexYt1FvdQ05QHVnOWAClGuwtgoMGvYvwpqOiqUc6MvutiHRMWOudV52HGXvEmfhIM/Ngj+rLsrKc1VGEA9YpqRfGG/66QF7dYK367eXRngzGDtFyrwQrdz8xsmtKBWdoPRGIOmEZ74YESz9NbRx9Yu5huX491SF1+hAGTqPyUVFs3XMqG/Zeaq5hbXzhMfdFKoHC6GVvlxBB42Q1nFyaCSxZH9sJ+r1/npGGZOaOXLVRJh7Xl+ispcsy3K735gcqP3980nzeukRDZ+sCsbYfTslTjmdQ7PPGUw2/CmvwLVBU1uw9q+VGw9/Gwiyi8s5qrt/UEH5e1Gp/L7+FZbNdmTuxcon4eYsO/C/GYml9GN6SMK1fe1h4dL9+AYsJFWrpm+GuPqb6AusaI2GPJ8+bduKTmubQ/g5w2O0AIiYrEgAAAABJRU5ErkJggg==" />
+  </svg>
+            </a>
+          </div>
+           <nav class="hamburger-menu">
+             <input id="menu__toggle" type="checkbox" />
+             <label class="menu__btn" for="menu__toggle">
+               <span></span>
+             </label>
+             <ul class="menu__box">
+               <li><a class="menu__item" href="#">HOME</a></li>
+               <li><a class="menu__item" href="#">ABOUT US</a></li>
+               <li><a class="menu__item" href="#">SERVICESE</a></li>
+               <li><a class="menu__item" href="#">PORTFOLIO</a></li>
+               <li><a class="menu__item" href="#">CONTACT</a></li>
+             </ul>
+           </nav>
+        </div>
+        <div class="header_tittle">
+          <h1>HI THERE, WE ARE <span> M&N</span></h1>
+          <p class="header_tittle_text">
+           This is Photoshop's version  of Lorem Ipsum. 
+           Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, 
+           lorem quis bibendum auctor, nisi elit 
+          </p>
+          <div class="header_btn">
+            <a href="" class="header_btn_work">My Work</a>
+            <a href="" class="header_btn_heare-me">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="story section">
+       <div class="wrapper">
+        <div class="tittle">
+          <h2>Our<span> Story</span></h2>
+        </div>
+        <div class="story_section">
+          <p class="story_section_text">
+            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non 
+          </p>
+          <blockquote>"All our dreams can come true, if we have the courage to pursue them."
+          </blockquote>
+        </div>
+        <img src="img/MAC.png" alt="Mac" class="story_img">
+       </div>
+    </section>
+    <section class="services section">
+         <div class="wrapper">
+          <div class="tittle">
+            <h2>Our<span class="tittle_white"> services</span></h2>
+            <p class="services_tittle_text">
+              We provide the best digital solutions
+            </p>
+          </div>
+          <div class="services_optional">
+            <aside>
+              <div class="services_optional_icon">
+                <svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="28px" height="26px">
+<path fill-rule="evenodd"  fill="rgb(26, 188, 156)"
+ d="M27.362,23.500 L0.637,23.500 C0.359,23.500 0.133,23.276 0.133,23.000 C0.133,22.724 0.359,22.500 0.637,22.500 L27.362,22.500 C27.641,22.500 27.867,22.724 27.867,23.000 C27.867,23.276 27.641,23.500 27.362,23.500 ZM27.362,21.000 L0.637,21.000 C0.359,21.000 0.133,20.776 0.133,20.500 C0.133,20.224 0.359,20.000 0.637,20.000 L27.362,20.000 C27.641,20.000 27.867,20.224 27.867,20.500 C27.867,20.776 27.641,21.000 27.362,21.000 ZM27.362,18.500 L0.637,18.500 C0.359,18.500 0.133,18.276 0.133,18.000 C0.133,17.724 0.359,17.500 0.637,17.500 L27.362,17.500 C27.641,17.500 27.867,17.724 27.867,18.000 C27.867,18.276 27.641,18.500 27.362,18.500 ZM27.309,16.000 C27.307,16.000 27.303,16.000 27.299,16.000 L0.701,16.000 C0.533,16.000 0.375,15.917 0.282,15.779 C0.188,15.640 0.170,15.465 0.234,15.311 L6.420,0.311 C6.498,0.123 6.682,-0.000 6.887,-0.000 L21.113,-0.000 C21.318,-0.000 21.502,0.123 21.580,0.311 L27.731,15.225 C27.783,15.304 27.813,15.398 27.813,15.500 C27.813,15.776 27.588,16.000 27.309,16.000 ZM20.775,1.000 L7.225,1.000 L1.451,15.000 L26.548,15.000 L20.775,1.000 ZM6.184,8.000 L21.311,8.000 C21.590,8.000 21.816,8.224 21.816,8.500 C21.816,8.776 21.590,9.000 21.311,9.000 L6.184,9.000 C5.905,9.000 5.680,8.776 5.680,8.500 C5.680,8.224 5.905,8.000 6.184,8.000 ZM20.303,6.500 L7.193,6.500 C6.914,6.500 6.688,6.276 6.688,6.000 C6.688,5.724 6.914,5.500 7.193,5.500 L20.303,5.500 C20.582,5.500 20.807,5.724 20.807,6.000 C20.807,6.276 20.582,6.500 20.303,6.500 ZM19.294,3.999 L8.201,3.999 C7.922,3.999 7.697,3.775 7.697,3.500 C7.697,3.224 7.922,3.000 8.201,3.000 L19.294,3.000 C19.573,3.000 19.799,3.224 19.799,3.500 C19.799,3.775 19.573,3.999 19.294,3.999 ZM0.637,25.000 L27.362,25.000 C27.641,25.000 27.867,25.224 27.867,25.500 C27.867,25.776 27.641,26.000 27.362,26.000 L0.637,26.000 C0.359,26.000 0.133,25.776 0.133,25.500 C0.133,25.224 0.359,25.000 0.637,25.000 Z"/>
+</svg>
+              </div>
+              <div class="services_optional_info">
+                <h3>PRINT MEDIA DESIGN</h3>
+                <p class="services_optional_info_text">
+                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                </p>
+              </div>
+            </aside>
+            <aside>
+              <div class="services_optional_icon">
+                <svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="28px" height="28px">
+<path fill-rule="evenodd"  fill="rgb(26, 188, 156)"
+ d="M20.125,26.250 L18.375,26.250 C17.409,26.250 16.625,25.465 16.625,24.500 L16.625,21.875 L11.375,21.875 L11.375,24.500 C11.375,25.465 10.591,26.250 9.625,26.250 L7.875,26.250 C7.391,26.250 7.000,26.642 7.000,27.125 C7.000,27.608 7.391,28.000 7.875,28.000 L20.125,28.000 C20.609,28.000 21.000,27.608 21.000,27.125 C21.000,26.642 20.609,26.250 20.125,26.250 ZM26.469,-0.000 L1.531,-0.000 C0.686,-0.000 -0.000,0.735 -0.000,1.641 L-0.000,18.484 C-0.000,19.390 0.686,20.125 1.531,20.125 L26.469,20.125 C27.314,20.125 28.000,19.390 28.000,18.484 L28.000,1.641 C28.000,0.735 27.314,-0.000 26.469,-0.000 ZM26.250,18.375 L1.750,18.375 L1.750,1.750 L26.250,1.750 L26.250,18.375 Z"/>
+</svg>
+              </div>
+              <div class="services_optional_info">
+                <h3>BRANDING DESGIN</h3>
+                <p class="services_optional_info_text">
+                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                </p>
+              </div>
+            </aside>
+            <aside>
+              <div class="services_optional_icon">
+                <svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="29px" height="27px">
+<path fill-rule="evenodd"  fill="rgb(26, 188, 156)"
+ d="M27.029,21.144 L23.765,21.144 L23.765,19.672 L25.674,19.672 L25.674,7.327 L23.765,7.327 L23.765,5.855 L27.029,5.855 C28.115,5.855 28.996,6.732 28.997,7.819 L28.997,19.179 C28.997,20.263 28.115,21.144 27.029,21.144 ZM27.572,10.866 L26.999,10.866 L26.999,16.133 L27.572,16.133 L27.572,10.866 ZM27.262,17.381 C26.982,17.381 26.756,17.605 26.756,17.883 C26.756,18.161 26.982,18.386 27.262,18.386 C27.539,18.386 27.765,18.161 27.765,17.883 C27.765,17.605 27.539,17.381 27.262,17.381 ZM25.968,4.565 L26.439,4.570 L26.439,2.237 L24.078,2.237 L24.078,1.710 L26.984,1.710 L26.984,4.576 L27.465,4.580 L26.701,5.344 L25.968,4.565 ZM20.813,26.999 L9.444,26.999 C8.356,26.999 7.478,26.117 7.478,25.033 L7.478,21.144 L7.478,19.672 L7.478,7.327 L7.478,5.855 L7.478,1.968 C7.478,0.882 8.356,0.000 9.443,0.000 L20.813,0.000 C21.901,0.000 22.781,0.882 22.782,1.968 L22.782,5.855 L22.782,7.327 L22.782,19.672 L22.782,21.144 L22.782,25.033 C22.782,26.118 21.901,26.999 20.813,26.999 ZM12.729,24.903 L17.530,24.903 L17.530,23.427 L12.729,23.427 L12.729,24.903 ZM17.766,1.423 L12.492,1.423 L12.492,1.996 L17.766,1.996 L17.766,1.423 ZM19.517,1.231 C19.239,1.231 19.014,1.457 19.014,1.734 C19.014,2.011 19.239,2.236 19.517,2.236 C19.795,2.236 20.020,2.011 20.020,1.734 C20.020,1.457 19.795,1.231 19.517,1.231 ZM21.308,21.144 L21.308,19.672 L21.308,7.327 L21.308,5.855 L21.308,3.320 L8.952,3.320 L8.952,5.855 L8.952,7.327 L8.952,19.672 L8.952,21.144 L8.952,21.875 L21.308,21.875 L21.308,21.144 ZM3.729,23.021 L3.248,23.016 L4.013,22.253 L4.746,23.032 L4.273,23.027 L4.273,25.360 L6.631,25.360 L6.631,25.887 L3.729,25.887 L3.729,23.021 ZM0.003,19.179 L0.003,7.819 C0.003,6.732 0.884,5.855 1.969,5.855 L6.494,5.855 L6.494,7.327 L5.131,7.327 L5.131,19.672 L6.493,19.672 L6.494,19.672 L6.494,21.144 L1.969,21.144 C0.884,21.144 0.003,20.263 0.003,19.179 ZM2.100,15.896 L3.577,15.896 L3.577,11.102 L2.100,11.102 L2.100,15.896 Z"/>
+</svg>
+              </div>
+              <div class="services_optional_info">
+                <h3>UI/UX DESGIN</h3>
+                <p class="services_optional_info_text">
+                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                </p>
+              </div>
+            </aside>
+            <aside>
+              <div class="services_optional_icon">
+                <svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="29px" height="30px">
+<path fill-rule="evenodd"  fill="rgb(26, 188, 156)"
+ d="M14.000,6.250 C9.176,6.250 5.265,10.167 5.265,15.000 C5.265,19.832 9.176,23.749 14.000,23.749 C18.824,23.749 22.735,19.832 22.735,15.000 C22.735,10.167 18.824,6.250 14.000,6.250 ZM14.000,20.000 C11.243,20.000 9.009,17.761 9.009,15.000 C9.009,12.238 11.243,10.000 14.000,10.000 C16.757,10.000 18.991,12.238 18.991,15.000 C18.991,17.761 16.757,20.000 14.000,20.000 ZM26.809,7.545 C25.391,5.028 25.179,5.187 25.179,5.187 C23.619,5.703 22.495,5.950 21.800,6.071 C20.657,5.068 19.322,4.285 17.855,3.778 C17.615,3.120 17.248,1.972 16.896,0.265 C16.896,0.265 16.924,-0.000 14.074,-0.000 C11.219,-0.000 11.250,0.265 11.250,0.265 C10.911,1.913 10.557,3.047 10.316,3.717 C8.861,4.193 7.529,4.941 6.383,5.905 C5.692,5.768 4.575,5.498 3.029,4.950 C3.029,4.950 2.819,4.786 1.350,7.272 C-0.121,9.756 0.118,9.866 0.118,9.866 C1.258,10.938 2.002,11.781 2.454,12.342 C2.259,13.197 2.145,14.085 2.145,15.000 C2.145,15.829 2.231,16.636 2.392,17.417 C1.927,17.969 1.168,18.792 0.015,19.832 C0.015,19.832 -0.227,19.938 1.192,22.453 C2.609,24.968 2.820,24.812 2.820,24.812 C4.381,24.296 5.505,24.048 6.201,23.927 C7.343,24.931 8.679,25.714 10.148,26.220 C10.390,26.880 10.755,28.025 11.106,29.733 C11.106,29.733 11.075,30.000 13.929,30.000 C16.779,30.000 16.750,29.733 16.750,29.733 C17.090,28.086 17.443,26.951 17.685,26.282 C19.139,25.806 20.471,25.059 21.617,24.095 C22.309,24.231 23.426,24.502 24.971,25.051 C24.971,25.051 25.179,25.213 26.653,22.728 C28.121,20.243 27.882,20.133 27.882,20.133 C26.742,19.060 25.999,18.217 25.547,17.657 C25.742,16.800 25.855,15.913 25.855,14.998 C25.855,14.169 25.769,13.362 25.608,12.581 C26.073,12.031 26.830,11.208 27.985,10.166 C27.985,10.167 28.228,10.061 26.809,7.545 ZM14.000,25.000 C8.487,25.000 4.017,20.522 4.017,15.000 C4.017,9.477 8.487,5.000 14.000,5.000 C19.513,5.000 23.983,9.477 23.983,15.000 C23.983,20.522 19.513,25.000 14.000,25.000 Z"/>
+</svg>
+              </div>
+              <div class="services_optional_info">
+                <h3>DEVELOPMENT</h3>
+                <p class="services_optional_info_text">
+                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                </p>
+              </div>
+            </aside>
+            <aside>
+              <div class="services_optional_icon">
+                <svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="28px" height="22px">
+<path fill-rule="evenodd"  fill="rgb(26, 188, 156)"
+ d="M14.000,8.250 C11.680,8.250 9.800,10.097 9.800,12.375 C9.800,14.653 11.680,16.500 14.000,16.500 C16.319,16.500 18.200,14.653 18.200,12.375 C18.200,10.097 16.319,8.250 14.000,8.250 ZM25.200,4.125 L21.840,4.125 C21.378,4.125 20.880,3.773 20.734,3.342 L19.866,0.782 C19.719,0.352 19.222,-0.000 18.760,-0.000 L9.240,-0.000 C8.778,-0.000 8.280,0.352 8.134,0.782 L7.266,3.342 C7.119,3.773 6.622,4.125 6.160,4.125 L2.800,4.125 C1.260,4.125 -0.000,5.362 -0.000,6.875 L-0.000,19.250 C-0.000,20.762 1.260,22.000 2.800,22.000 L25.200,22.000 C26.740,22.000 28.000,20.762 28.000,19.250 L28.000,6.875 C28.000,5.362 26.740,4.125 25.200,4.125 ZM14.000,19.250 C10.134,19.250 7.000,16.171 7.000,12.375 C7.000,8.578 10.134,5.500 14.000,5.500 C17.865,5.500 21.000,8.578 21.000,12.375 C21.000,16.171 17.865,19.250 14.000,19.250 ZM24.220,8.798 C23.679,8.798 23.240,8.367 23.240,7.835 C23.240,7.304 23.679,6.873 24.220,6.873 C24.761,6.873 25.200,7.304 25.200,7.835 C25.200,8.367 24.761,8.798 24.220,8.798 Z"/>
+</svg>
+              </div>
+              <div class="services_optional_info">
+                <h3>PHOTOGRAPHY</h3>
+                <p class="services_optional_info_text">
+                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                </p>
+              </div>
+            </aside>
+            <aside>
+              <div class="services_optional_icon">
+                <svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="28px" height="23px">
+<path fill-rule="evenodd"  fill="rgb(26, 188, 156)"
+ d="M27.572,13.611 L24.509,13.714 C24.503,13.714 24.499,13.714 24.493,13.714 C24.259,13.714 24.065,13.534 24.057,13.304 C24.049,13.069 24.238,12.873 24.478,12.865 L27.542,12.761 C27.782,12.740 27.985,12.936 27.993,13.172 C28.001,13.406 27.813,13.603 27.572,13.611 ZM23.661,9.613 C23.601,9.641 23.536,9.655 23.474,9.655 C23.311,9.655 23.154,9.565 23.079,9.413 C22.975,9.201 23.067,8.947 23.285,8.846 L26.051,7.559 C26.268,7.458 26.528,7.547 26.633,7.759 C26.737,7.971 26.645,8.225 26.427,8.326 L23.661,9.613 ZM21.732,6.707 C21.647,6.790 21.535,6.832 21.423,6.832 C21.311,6.832 21.200,6.790 21.114,6.707 C20.944,6.541 20.944,6.272 21.114,6.106 L23.282,3.995 C23.453,3.828 23.729,3.828 23.900,3.995 C24.070,4.161 24.070,4.430 23.900,4.596 L21.732,6.707 ZM18.805,4.536 C18.731,4.690 18.573,4.782 18.409,4.782 C18.347,4.782 18.285,4.769 18.225,4.743 C18.007,4.644 17.911,4.391 18.013,4.178 L19.301,1.469 C19.402,1.257 19.661,1.164 19.880,1.262 C20.099,1.361 20.194,1.614 20.093,1.827 L18.805,4.536 ZM13.994,3.835 C13.753,3.835 13.557,3.645 13.557,3.410 L13.557,0.425 C13.557,0.189 13.753,-0.001 13.994,-0.001 C14.235,-0.001 14.431,0.189 14.431,0.425 L14.431,3.410 C14.431,3.645 14.235,3.835 13.994,3.835 ZM10.155,4.542 C9.981,4.542 9.816,4.440 9.749,4.272 L8.629,1.494 C8.540,1.276 8.651,1.028 8.875,0.943 C9.099,0.858 9.353,0.965 9.441,1.184 L10.561,3.962 C10.650,4.180 10.539,4.428 10.314,4.513 C10.262,4.533 10.208,4.542 10.155,4.542 ZM13.993,6.516 C17.121,6.516 19.665,8.993 19.665,12.038 C19.665,14.170 17.245,18.802 17.142,18.998 C17.130,19.022 17.112,19.042 17.096,19.063 L17.096,21.193 C17.096,21.428 16.900,21.618 16.659,21.618 L11.329,21.618 C11.088,21.618 10.892,21.428 10.892,21.193 L10.892,18.805 C10.892,18.787 10.900,18.772 10.903,18.754 C10.346,17.719 8.322,13.826 8.322,12.038 C8.322,8.993 10.866,6.516 13.993,6.516 ZM14.829,18.380 C14.826,18.361 14.818,18.345 14.818,18.326 L14.818,13.714 L13.170,13.714 L13.169,13.714 L13.169,18.326 C13.169,18.345 13.160,18.361 13.158,18.380 L14.829,18.380 ZM11.687,18.380 L12.307,18.380 C12.305,18.361 12.296,18.345 12.296,18.326 L12.296,13.714 L11.714,13.714 C11.472,13.714 11.277,13.525 11.277,13.289 C11.277,13.054 11.472,12.864 11.714,12.864 L12.296,12.864 L12.296,12.651 C12.296,12.416 12.492,12.226 12.733,12.226 C12.974,12.226 13.170,12.416 13.170,12.651 L13.170,12.864 L14.818,12.864 L14.818,12.651 C14.818,12.416 15.013,12.226 15.254,12.226 C15.495,12.226 15.691,12.416 15.691,12.651 L15.691,12.864 L16.139,12.864 C16.380,12.864 16.575,13.054 16.575,13.289 C16.575,13.525 16.380,13.714 16.139,13.714 L15.691,13.714 L15.691,18.326 C15.691,18.345 15.682,18.361 15.680,18.380 L16.484,18.380 C16.972,17.418 18.792,13.716 18.792,12.038 C18.792,9.462 16.639,7.366 13.994,7.366 C11.348,7.366 9.196,9.462 9.196,12.038 C9.196,13.467 10.891,16.906 11.687,18.380 ZM6.821,6.741 C6.808,6.757 6.802,6.777 6.787,6.791 C6.702,6.877 6.588,6.920 6.475,6.920 C6.365,6.920 6.255,6.880 6.170,6.799 L3.976,4.714 C3.803,4.550 3.800,4.282 3.968,4.113 C3.989,4.093 4.016,4.082 4.040,4.066 C4.056,4.042 4.067,4.016 4.089,3.995 C4.259,3.828 4.536,3.828 4.706,3.995 L6.873,6.106 C7.044,6.272 7.044,6.541 6.873,6.707 C6.857,6.722 6.838,6.729 6.821,6.741 ZM4.500,10.376 C4.436,10.550 4.268,10.659 4.088,10.659 C4.040,10.659 3.991,10.651 3.942,10.634 L1.051,9.640 C0.824,9.562 0.705,9.319 0.785,9.097 C0.865,8.876 1.115,8.760 1.342,8.839 L4.233,9.834 C4.461,9.911 4.580,10.154 4.500,10.376 ZM3.930,13.979 C3.939,14.214 3.750,14.411 3.509,14.419 L0.445,14.522 C0.440,14.522 0.435,14.522 0.430,14.522 C0.196,14.522 0.002,14.342 -0.006,14.112 C-0.014,13.877 0.174,13.680 0.415,13.672 L3.479,13.569 C3.713,13.546 3.921,13.744 3.930,13.979 ZM4.326,17.670 C4.543,17.568 4.804,17.658 4.909,17.870 C5.013,18.081 4.920,18.336 4.703,18.436 L1.937,19.724 C1.876,19.753 1.812,19.766 1.749,19.766 C1.586,19.766 1.430,19.677 1.355,19.525 C1.251,19.313 1.343,19.058 1.561,18.958 L4.326,17.670 ZM12.733,22.151 L15.254,22.151 C15.495,22.151 15.691,22.341 15.691,22.576 C15.691,22.811 15.495,23.001 15.254,23.001 L12.733,23.001 C12.492,23.001 12.296,22.811 12.296,22.576 C12.296,22.341 12.492,22.151 12.733,22.151 ZM24.045,16.649 L26.937,17.642 C27.163,17.720 27.283,17.963 27.203,18.185 C27.139,18.359 26.971,18.468 26.791,18.468 C26.743,18.468 26.693,18.460 26.646,18.444 L23.755,17.450 C23.527,17.372 23.408,17.130 23.488,16.908 C23.568,16.687 23.818,16.572 24.045,16.649 Z"/>
+</svg>
+              </div>
+              <div class="services_optional_info">
+                <h3>CREATIVE IDEA</h3>
+                <p class="services_optional_info_text">
+                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                </p>
+              </div>
+            </aside>
+          </div>
+         </div>
+    </section>
+    <section class="work section" >
+      <div class="wrapper">
+        <div class="tittle">
+          <h2>Our<span> Work</span></h2>
+        </div>
+        <div class="slide" data-anchor="slide1">
+          <div class="grid_section">
+            <div class="slide_img">
+              <img src="img/Gallery1.png" alt="">
+             </div>
+             <div class="slide_img">
+              <img src="img/Gallery2.png" alt="">
+             </div>
+              <div class="slide_img">
+                <img src="img/Gallery3.png" alt="">
+              </div>
+              <div class="slide_img">
+                <img src="img/Gallery4.png" alt="">
+              </div>
+            <div class="slide_img">
+              <img src="img/Gallery5.png" alt="">
+            </div>
+              <div class="slide_img">
+                <img src="img/Gallery6.png" alt="">
+              </div>
+          </div>
+        </div>
+        <div class="slide" data-anchor="slide2">
+          <div class="grid_section">
+            <div class="slide_img">
+              <img src="img/Gallery1.png" alt="">
+             </div>
+             <div class="slide_img">
+              <img src="img/Gallery2.png" alt="">
+             </div>
+              <div class="slide_img">
+                <img src="img/Gallery3.png" alt="">
+              </div>
+              <div class="slide_img">
+                <img src="img/Gallery4.png" alt="">
+              </div>
+            <div class="slide_img">
+              <img src="img/Gallery5.png" alt="">
+            </div>
+              <div class="slide_img">
+                <img src="img/Gallery6.png" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer section">
+       <div class="wrapper">
+        <div class="tittle">
+          <h2>SAY<span class="tittle_white"> HELLO</span></h2>
+          <p class="footer_title_text">
+            Do you have any project?
+          </p>
+        </div>
+        <p class="footer_text">
+          We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website
+        </p>
+     <div class="footer_container">
+      <div class="footer_contact">
+        <div class="footer_address">
+          <div class="footer_address_info">
+            <div class="footer_address_info_icon">
+              <svg 
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="23px" height="32px">
+<path fill-rule="evenodd"  fill="rgb(26, 188, 156)"
+d="M11.268,31.504 C11.433,31.692 11.591,31.811 11.745,31.895 L11.752,31.899 L12.061,31.997 L12.368,31.899 L12.377,31.895 C12.529,31.811 12.688,31.692 12.853,31.504 C12.853,31.504 21.974,21.380 22.890,12.608 C22.946,12.156 22.982,11.697 22.982,11.231 C22.982,5.029 18.057,0.003 11.982,0.003 C5.906,0.003 0.981,5.029 0.981,11.231 C0.981,11.705 1.018,12.168 1.075,12.627 C2.015,21.396 11.268,31.504 11.268,31.504 ZM11.982,4.008 C15.884,4.008 19.058,7.249 19.058,11.231 C19.058,15.212 15.884,18.452 11.982,18.452 C8.081,18.452 4.906,15.212 4.906,11.231 C4.906,7.249 8.081,4.008 11.982,4.008 Z"/>
+</svg>
+            </div>
+            <div class="footer_address_info_text">
+              <h4>ADDRESS</h4>
+              <p>
+                198 West 21th Street, Suite 721New York, NY 10010
+              </p>
+            </div>
+          </div>
+          <div class="coordination">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.1733001763646!2d30.49571941515564!3d50.475117393469134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce0b9d44f09b%3A0x27cd6c3eb365c422!2z0YPQuy4g0JrQvtC90YHRgtCw0L3RgtC40L3QvtCy0YHQutCw0Y8sIDc1LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1622400652456!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="footer_number">
+          <div class="footer_number_info">
+            <div class="footer_number_info_icon">
+              <svg 
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="32px" height="32px">
+<path fill-rule="evenodd"  fill="rgb(26, 188, 156)"
+d="M31.984,25.254 C32.052,25.774 31.894,26.226 31.510,26.610 L27.004,31.085 C26.801,31.311 26.536,31.503 26.208,31.661 C25.881,31.819 25.559,31.921 25.243,31.966 C25.220,31.966 25.152,31.972 25.040,31.983 C24.927,31.994 24.780,32.000 24.599,32.000 C24.170,32.000 23.476,31.926 22.516,31.779 C21.556,31.633 20.382,31.271 18.993,30.695 C17.604,30.119 16.029,29.254 14.267,28.102 C12.505,26.949 10.631,25.367 8.644,23.356 C7.063,21.797 5.753,20.305 4.714,18.881 C3.675,17.458 2.840,16.141 2.207,14.932 C1.575,13.723 1.101,12.627 0.784,11.644 C0.468,10.661 0.254,9.813 0.141,9.102 C0.028,8.390 -0.017,7.830 0.005,7.424 C0.028,7.017 0.039,6.791 0.039,6.746 C0.084,6.429 0.186,6.107 0.344,5.780 C0.502,5.452 0.694,5.186 0.920,4.983 L5.425,0.475 C5.742,0.158 6.103,0.000 6.509,0.000 C6.803,0.000 7.063,0.085 7.289,0.254 C7.514,0.424 7.706,0.633 7.864,0.881 L11.489,7.763 C11.692,8.124 11.749,8.520 11.659,8.949 C11.568,9.378 11.376,9.740 11.083,10.034 L9.423,11.695 C9.378,11.740 9.338,11.813 9.304,11.915 C9.270,12.017 9.253,12.102 9.253,12.169 C9.344,12.644 9.547,13.186 9.863,13.796 C10.134,14.339 10.552,15.000 11.116,15.780 C11.681,16.559 12.483,17.458 13.522,18.475 C14.538,19.514 15.441,20.322 16.232,20.898 C17.022,21.474 17.683,21.898 18.214,22.169 C18.744,22.440 19.151,22.604 19.433,22.661 L19.857,22.746 C19.902,22.746 19.975,22.729 20.077,22.695 C20.178,22.661 20.252,22.621 20.297,22.576 L22.228,20.610 C22.634,20.248 23.109,20.068 23.651,20.068 C24.035,20.068 24.340,20.135 24.565,20.271 L24.599,20.271 L31.137,24.135 C31.612,24.429 31.894,24.802 31.984,25.254 Z"/>
+</svg>
+            </div>
+            <div class="footer_number_info_text">
+              <h4>PHONE NUMBER</h4>
+              <a href="tel:+88 01812 346 789">+88 01812 346 789</a>
+              <a href="tel:027451234">|  027451234</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer_email">
+          <div class="footer_email_info">
+            <div class="footer_email_info_icon">
+              <svg 
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="32px" height="25px">
+             <path fill-rule="evenodd"  fill="rgb(26, 188, 156)"
+              d="M24.012,13.833 C25.715,12.652 27.782,11.242 30.215,9.606 C30.893,9.144 31.488,8.629 32.000,8.061 L32.000,21.775 L24.012,13.833 ZM28.947,7.706 C26.058,9.700 23.878,11.205 22.397,12.228 C21.584,12.789 20.978,13.207 20.590,13.476 C20.532,13.516 20.443,13.580 20.323,13.665 C20.194,13.757 20.031,13.873 19.831,14.018 C19.444,14.296 19.123,14.520 18.866,14.692 C18.610,14.864 18.301,15.056 17.938,15.269 C17.575,15.482 17.232,15.642 16.911,15.749 C16.590,15.855 16.292,15.908 16.018,15.908 L16.001,15.908 L15.983,15.908 C15.709,15.908 15.411,15.855 15.090,15.749 C14.769,15.642 14.426,15.482 14.063,15.269 C13.700,15.056 13.390,14.864 13.134,14.692 C12.878,14.520 12.557,14.296 12.170,14.018 C11.969,13.873 11.806,13.757 11.677,13.665 C11.558,13.580 11.468,13.516 11.411,13.476 C10.912,13.127 10.309,12.707 9.609,12.222 C8.787,11.653 7.831,10.993 6.732,10.236 C4.697,8.833 3.476,7.990 3.072,7.706 C2.333,7.209 1.637,6.525 0.982,5.656 C0.328,4.785 0.000,3.978 0.000,3.232 C0.000,2.309 0.247,1.540 0.741,0.924 C1.235,0.309 1.940,0.001 2.857,0.001 L29.143,0.001 C29.917,0.001 30.586,0.279 31.152,0.835 C31.717,1.392 32.000,2.060 32.000,2.842 C32.000,3.777 31.708,4.670 31.126,5.522 C30.542,6.374 29.816,7.102 28.947,7.706 ZM1.804,9.606 C4.332,11.314 6.392,12.721 7.991,13.831 L-0.000,21.775 L-0.000,8.061 C0.524,8.641 1.125,9.156 1.804,9.606 ZM10.678,15.731 C11.357,16.227 11.907,16.615 12.330,16.893 C12.753,17.172 13.315,17.456 14.018,17.745 C14.720,18.036 15.375,18.180 15.982,18.180 L16.000,18.180 L16.017,18.180 C16.625,18.180 17.280,18.036 17.982,17.745 C18.684,17.456 19.247,17.172 19.669,16.893 C20.092,16.615 20.643,16.227 21.321,15.731 C21.521,15.587 21.731,15.437 21.949,15.282 L31.015,24.296 C30.485,24.762 29.862,24.998 29.143,24.998 L2.857,24.998 C2.138,24.998 1.514,24.762 0.984,24.296 L10.052,15.280 C10.279,15.442 10.489,15.593 10.678,15.731 Z"/>
+             </svg>
+            </div>
+            <div class="footer_email_info_text">
+              <h4>Email</h4>
+              <a href="mailto:sibluhasan@gmail.com">sibluhasan@gmail.com
+                </a>
+              <a href="mailto:hello@address.com">hello@address.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_form">
+        <form action="get" class="name_form">
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="List name">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Prodject name">
+          <textarea name="text" id="text" cols="30" rows="10" placeholder="Your Message...."></textarea>
+        </form>
+      </div>
+     </div>
+       </div>
+    </footer>
+  </div>
+  </body>
+</html>

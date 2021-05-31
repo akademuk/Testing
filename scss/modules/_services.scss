@@ -1,0 +1,124 @@
+.services {
+  background: url(../../img/services_banner.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  .wrapper {
+    .tittle {
+      display: flex;
+      align-items: center;
+      h2 {
+        border-right: 1px solid #efefef;
+        padding-right: 15px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+.services_tittle_text {
+  color: #efefef;
+  font-size: 18px;
+  padding-left: 10px;
+  height: 22px;
+}
+.services_optional {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+aside {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+.services_optional_info_text {
+  color: #eeeeee;
+  font-size: 14px;
+}
+.services_optional_icon {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1abc9c;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+  svg {
+    display: flex;
+  }
+  &:hover {
+    background: #1abc9c;
+    cursor: pointer;
+    svg path {
+      fill: #ffffff;
+    }
+  }
+}
+@media (min-width: 1500px) {
+  .services {
+    .wrapper {
+      .tittle {
+        margin-bottom: 150px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  aside {
+    width: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .services_tittle_text {
+    font-size: 13px;
+  }
+  .services {
+    .wrapper {
+      .tittle {
+        align-items: flex-start;
+      }
+    }
+  }
+  .services_optional_info_text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .services {
+    padding-top: 5px;
+    .wrapper {
+      .tittle {
+        flex-direction: column;
+        h2 {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  aside {
+    flex-direction: column;
+  }
+  .services_optional_info_text {
+    font-size: 8px;
+    margin-bottom: 0;
+  }
+  .services_optional {
+    align-items: baseline;
+  }
+  .services_optional_icon {
+    height: auto;
+  }
+}
