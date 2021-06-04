@@ -108,7 +108,7 @@ h4 {
 }
 
 .header {
-  background: url(../../img/header_banner.png);
+  background: url(../img/header_banner.png);
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -337,7 +337,7 @@ h4 {
 }
 
 .footer {
-  background: url(../../img/footer.png);
+  background: url(../img/footer.png);
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -613,7 +613,7 @@ blockquote {
 }
 
 .services {
-  background: url(../../img/services_banner.png);
+  background: url(../img/services_banner.png);
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -806,7 +806,7 @@ aside {
 }
 
 .fp-controlArrow.fp-prev {
-  background: url(../../img/arrow.png);
+  background: url(../img/arrow.png);
   width: 32px !important;
   height: 32px;
   background-repeat: no-repeat;
@@ -820,14 +820,14 @@ aside {
 }
 
 .fp-controlArrow.fp-prev:hover {
-  background: url(../../img/arrow_hover.png);
+  background: url(../img/arrow_hover.png);
   transform: rotate(0deg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .fp-controlArrow.fp-next {
-  background: url(../../img/arrow.png);
+  background: url(../img/arrow.png);
   width: 32px !important;
   height: 32px;
   background-repeat: no-repeat;
@@ -839,7 +839,7 @@ aside {
 }
 
 .fp-controlArrow.fp-next:hover {
-  background: url(../../img/arrow_hover.png);
+  background: url(../img/arrow_hover.png);
   transform: rotate(180deg);
   background-repeat: no-repeat;
   background-size: cover;

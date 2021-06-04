@@ -50,7 +50,7 @@
   top: 8% !important;
 }
 .fp-controlArrow.fp-prev {
-  background: url(../../img/arrow.png);
+  background: url(../img/arrow.png);
   width: 32px !important;
   height: 32px;
   background-repeat: no-repeat;
@@ -62,14 +62,14 @@
   z-index: 99;
   top: 70px !important;
   &:hover {
-    background: url(../../img/arrow_hover.png);
+    background: url(../img/arrow_hover.png);
     transform: rotate(0deg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 .fp-controlArrow.fp-next {
-  background: url(../../img/arrow.png);
+  background: url(../img/arrow.png);
   width: 32px !important;
   height: 32px;
   background-repeat: no-repeat;
@@ -79,7 +79,7 @@
   z-index: 99;
   top: 70px !important;
   &:hover {
-    background: url(../../img/arrow_hover.png);
+    background: url(../img/arrow_hover.png);
     transform: rotate(180deg);
     background-repeat: no-repeat;
     background-size: cover;
