@@ -3,7 +3,6 @@ body {
   padding: 0;
   color: #cdcdcd;
   font-family: "Asap", sans-serif;
-  overflow-y: scroll !important;
 }
 
 .wrapper {
@@ -751,7 +750,7 @@ aside {
 }
 
 .work {
-  height: 100vh;
+  height: 100vh !important;
 }
 
 .work .wrapper {
